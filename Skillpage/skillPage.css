@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Regular";
+  src: url(../asset/Font/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Semibold";
+  src: url(../asset/Font/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Bold";
+  src: url(../asset/Font/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Plus-Jakarta-Sans-ExtraBold";
+  src: url(../asset/Font/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf);
+}
+* {
+  margin: 0;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 1.2em 0;
+  border-bottom: solid 1px rgb(190, 190, 190);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+#Name {
+  list-style-type: none;
+  margin-left: 3em;
+}
+
+#Name > li > a {
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 2em;
+  color: black;
+  font-size: 1.5em;
+  font-family: "Plus-Jakarta-Sans-Bold";
+}
+
+/* Animation Hover Navbar */
+#ulNav {
+  list-style-type: none;
+  display: flex;
+  gap: 0 2em;
+  margin-right: 8em;
+}
+
+#ulNav > li > a {
+  text-decoration: none;
+  position: relative;
+  margin: 0;
+  font-size: 1em;
+  font-family: "Plus-Jakarta-Sans-Semibold";
+  color: black;
+}
+
+/* Main animation */
+#ulNav > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background: #0099ff;
+  transition: 0.3s ease-out;
+}
+
+#ulNav > li > a:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/* Project */
+#project {
+  padding: 0em 3.5em;
+  margin-top: 3em;
+}
+
+#judulMyProject {
+  text-align: center;
+  font-family: "Plus-Jakarta-Sans-Bold";
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+#project1 {
+  display: flex;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 6px;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+#project1 > img {
+  width: 50%;
+  height: 20em;
+  margin-left: 1em;
+}
+
+#wrapperDeskripsiProject > h2 {
+  font-family: "Plus-Jakarta-Sans-Bold";
+  margin-bottom: 0.5em;
+}
+
+#wrapperDeskripsiProject > p {
+  font-family: "Plus-Jakarta-Sans-Regular";
+  margin-bottom: 0.3em;
+}
+
+/* Footer */
+#footer {
+  padding: 0.5em 3.5em;
+  height: fit-content;
+  background-color: #0099ff;
+}
+
+#wrapperFooter {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 2em;
+  color: white;
+}
+
+#wrapperIcon {
+  text-align: center;
+  display: flex;
+  gap: 0 2em;
+}
+
+#wrapperFooter > p {
+  font-family: "Plus-Jakarta-Sans-Semibold";
+}
+
+#wrapperIcon > a {
+  color: white;
+}
+
+#wrapperIcon > a:hover {
+  color: #b5e2ff;
+}
