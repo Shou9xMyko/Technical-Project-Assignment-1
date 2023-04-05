@@ -3,14 +3,14 @@ const navAbout = document.getElementById("About");
 const navSkills = document.getElementById("Skills");
 const navArticles = document.getElementById("Articles");
 
+navHome.addEventListener("click", () => {
+  window.close();
+  window.open("../index.html");
+});
+
 navAbout.addEventListener("click", () => {
   window.close();
   window.open("../AboutmePage/aboutmePage.html");
-});
-
-navHome.addEventListener("click", () => {
-  window.close();
-  window.open("../Homepage/index.html");
 });
 
 navSkills.addEventListener("click", () => {

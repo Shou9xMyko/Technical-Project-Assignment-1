@@ -10,7 +10,7 @@ navAbout.addEventListener("click", () => {
 
 navHome.addEventListener("click", () => {
   window.close();
-  window.open("../Homepage/index.html");
+  window.open("../index.html");
 });
 
 navSkills.addEventListener("click", () => {
